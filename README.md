@@ -11,9 +11,11 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: ruby 3.1.2p20
 
-* System dependencies
+* System dependencies: 
+Devise v4.9.0 https://github.com/heartcombo/devise
+Responders v3.1.0 https://github.com/heartcombo/responders
 
 * Configuration
 
