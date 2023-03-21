@@ -30,6 +30,9 @@ gem "jbuilder"
 # Devise 4.0 is a flexible authentication solution for Rails based on Warden (https://github.com/heartcombo/devise#getting-started)
 gem 'devise'
 
+# Responders 3.1.0 A set of responders modules to dry up your Rails app.
+gem "responders"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
