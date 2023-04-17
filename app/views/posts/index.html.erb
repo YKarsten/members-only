@@ -1,7 +1,20 @@
+<%# logout button %>
+<%= button_to "Logout", destroy_user_session_path, data: { turbo_confirm: "Are you sure?" }, method: :delete %>
+<%# sign in button %>
+<%= button_to "Sign in", action="users/sign_in" %>
+
 <ul>
   <% @posts.each do |post| %>
     <li>
-      <%= post.title %>
+      <h1><%= post.title %></h1>
+
+      <strong><%= post.body %></strong><br><br>
+
+      <% if user_signed_in? %>
+        written by User <%= post.user_id%>
+      <% end %>
     </li>
   <% end %>
 </ul>
+
+<%= link_to "New Post", new_post_path %>
