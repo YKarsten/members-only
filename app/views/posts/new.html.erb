@@ -1,0 +1,10 @@
+ <%= form_with model: @post do |form| %>
+
+    <%= label_tag(:title, "Title:") %>
+    <%= form.text_field :title%> <br><br>
+
+ 
+    <%= form.text_field :body , placeholder: "Your thoughts go here..." %> <br><br>
+
+    <%= submit_tag("Submit") %>
+  <% end %>
