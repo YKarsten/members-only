@@ -1,4 +1,7 @@
- <%= form_with model: @post do |form| %>
+ <%# logout button %>
+<%= button_to "Logout", destroy_user_session_path, data: { turbo_confirm: "Are you sure?" }, method: :delete %> <br>
+
+<%= form_with model: @post do |form| %>
 
     <%= label_tag(:title, "Title:") %>
     <%= form.text_field :title%> <br><br>
